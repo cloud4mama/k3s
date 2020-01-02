@@ -1,0 +1,12 @@
+[Unit]
+Description=K3s
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/root/startasworker2.sh
+
+[Install]
+WantedBy=multi-user.target
+
+
